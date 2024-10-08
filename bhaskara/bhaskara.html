@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Bhaskara</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #60bfcc, #24d83c);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        h1 {
+            color: #28e70e;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #616161;
+            display: block; 
+        }
+        input {
+            padding: 12px;
+            width: 80%; 
+            margin: 10px auto 15px; 
+            border: 2px solid #25ca20;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+            font-size: 16px;
+            display: block; 
+            background-color: #e6e2e2;
+        }
+        input:focus {
+            border-color: #24c91f;
+            outline: none;
+        }
+        button {
+            background-color: #1ed627;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #14e60c;
+            transform: translateY(-2px);
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #14be39;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Bhaskara</h1>
+        <label for="a">Coeficiente A:</label>
+        <input type="number" id="a" name="a" required>
+
+        <label for="b">Coeficiente B:</label>
+        <input type="number" id="b" name="b" required>
+
+        <label for="c">Coeficiente C:</label>
+        <input type="number" id="c" name="c" required>
+
+        <button onclick="baskara()">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="baskara1.js"></script>
+</body>
+</html>
